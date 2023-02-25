@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Player - Add Songs</title>
+</head>
+<body>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            flex-flow: column;
+        }
+        #addSongForm {
+            display: flex;
+            flex-flow: column;
+            min-width: 35vw;
+        }
+
+        input {
+            border-radius: 5px;
+            padding: 10px 15px;
+            margin: 5px;
+        }
+
+        label {
+            font-weight: bolder;
+            font-size: 2vw;
+            margin-top: 10px;
+        }
+
+        input[type=submit] {
+            cursor: pointer;
+            font-size: 2vw;
+        }
+        h1 {
+            font-size: 5vw;
+        }
+    </style>
+    <h1>Crear Canción</h1>
+    <form id="addSongForm">
+        <label for="Title">Title:</label>
+        <input id ="Title" type="text" placeholder="Salvame">
+        <label for="Artist">Artist:</label>
+        <input id ="Artist" type="text" placeholder="RBD">
+        <label for="Album">Album:</label>
+        <input id ="Album" type="text" placeholder="Soy Rebelde">
+        <label for="AlbumCover">Album Cover URL</label>
+        <input id ="AlbumCover" type="text" placeholder="https://urlalstorage.com">
+        <label for="File">File URL</label>
+        <input id ="File" type="text" placeholder="https://urltostorage.com">
+        <input type="submit" value="Crear Canción">
+    </form>
+    <script> window.page = 'add'; </script>
+    <script src="/public/dist/bundle.js"></script>
+</body>
+</html>
